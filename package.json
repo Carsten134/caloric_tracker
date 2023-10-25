@@ -14,5 +14,10 @@
     "nuxt": "^3.8.0",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxtjs/supabase": "^0.3.6",
+    "@nuxtjs/tailwindcss": "^6.7.0",
+    "@supabase/supabase-js": "^2.24.0"
   }
 }
