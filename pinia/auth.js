@@ -6,6 +6,7 @@ export const useAuthStore = defineStore('auth',
   {state: () => {
     return {
       authed: false,
+      id: 1,
     }
   },
   actions: {

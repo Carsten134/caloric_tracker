@@ -1,5 +1,5 @@
 import { defineNuxtRouteMiddleware } from "nuxt/app";
-import { useAuthStore } from "~/auth";
+import { useAuthStore } from "~/pinia/auth";
 
 export default defineNuxtRouteMiddleware((to, from) =>{
     const authStore = useAuthStore();

@@ -1,7 +1,7 @@
 <script setup>
   definePageMeta({
     middleware: ['auth-redirect'],
-    title: 'redirecting...'
+    name: 'redirecting...'
   });
 </script>
 

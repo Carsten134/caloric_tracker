@@ -1,6 +1,7 @@
 <script>
   import { useAuthStore } from "~/pinia/auth"
   definePageMeta({
+    name: "home",
     middleware: [() => {
       const authStore = useAuthStore();
       if (!authStore.authed) {
@@ -10,5 +11,11 @@
   })
 </script>
 <template>
-<span class="font-mono text-2xl">Home</span>
-</template>~/auth
+  <div class="w-screen h-screen">
+    <HomeNavBar></HomeNavBar>
+    <div class="flex justify-center w-5/6">
+      <HomeWeightTracker class="mt-5"></HomeWeightTracker>
+    </div>
+  </div>
+  
+</template>

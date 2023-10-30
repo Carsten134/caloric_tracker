@@ -6,14 +6,14 @@
 
   const Checkpassword = () => {
     if (authStore.tryPassword(textInput.value) == true) {
-      navigateTo("/sites/home");
+      navigateTo("/sites/home/");
     } else {
       loginMessage.value = "Passwort nicht korrekt";
     }
   }
 </script>
 <template>
-  <div>
+  <div class="">
     <label for="Ipassword" class="pr-3">Passwort</label>
     <input type="password" id="Ipassword" class="border-solid border-slate-300 border pr-3" v-model="textInput">
     <div class="flex justify-center items-center my-3">
@@ -23,4 +23,4 @@
       <p v-if="loginMessage" class="text-mono text-red-600">{{ loginMessage }}</p>
     </div>
   </div>
-</template>~/auth
+</template>
